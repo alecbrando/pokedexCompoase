@@ -28,7 +28,6 @@ class PokemonRepository @Inject constructor(
         } catch (e : Exception) {
             return Resource.Error(message = "An unknown error occurred")
         }
-
         return Resource.Success(response)
     }
 }
